@@ -10,11 +10,27 @@ html {
 .list-wrap {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 0 auto;
-    width: 1400px;
+    max-width: 1400px;
     padding: 0 20px;
 }
+
+.card {
+  width: 300px;
+  height: 460px;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+  margin:10px;
+}
+
+/** two columns on mobile **/
+@media screen and (max-width: 428px) {
+  .card {
+    width: 100%;
+  }
+}
+
 
 /** Make a Material Design Card */
 .card__wrap {
@@ -41,13 +57,6 @@ html {
   background:transparent;
 }
 
-.card {
-  width: 300px;
-  height: 460px;
-  perspective: 1000px;
-  -webkit-perspective: 1000px;
-  margin:10px;
-}
 
 .card.flip .card__wrap {
   transform: rotateY(180deg);
