@@ -64,10 +64,13 @@ html {
 }
 
 .card__back {
-  color: #000;
+  color: #fff!important;
   transform: rotateY(180deg);
-  background: #fff;;
+  background: #040314;;
+}
 
+.card__back h3 {
+  color:#eee;
 }
 
 .card__image {
@@ -183,6 +186,23 @@ html {
 
 .listing.card .card__content a{
   color:#333
+}
+
+.listing__contact--label {
+  text-indent: -9999px;
+}
+
+.listing__contact--text {
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 5px 10px;
+    text-decoration: none;
+    width:100%;
+}
+
+.listing__contact--readonly {
+    border:none;
+    background-color:#eee;
 }
 
 

@@ -12,7 +12,7 @@
     </head>
     <body>
         
-        <code>Updated 12 september 2022 - 14:20</code>
+        <code>Updated 12 september 2022 - 13:53</code>
         <div class="card listing">
             <div class="card__wrap">
                 <div class="card__front">
@@ -22,7 +22,7 @@
                     <div class="card__content">
                         <h2 class="card__title">2002 Jeep Wrangler</h2>
                         <p class="card__text">4.0L I6, Automatic, 4x4, Original Miles, Lifted, Rust Free</p>
-                        <span class="listing__price listing__pill">$9500</span>
+                        <span class="listing__price listing__pill">$9,500</span>
                         <div class="listing__details">
                             <span class="listing__details--miles"><i class="fa fa-tachometer"></i>Miles: 174,000</span>
                             <span class="list__details--seller"><i class="fa fa-external-link"></i><a href="#">Go Motors, USA</a></span>
@@ -40,17 +40,25 @@
                     <div class="card__content">
                         
                         <h2 class="card__title">Contact Seller</h2>
+                        <h3 class="card__subtitle">Go Motors, USA</h3>
+
                         <div class="listing__contact">
                             <!--Quick Contact Form-->
                             <form action="/action_page.php">
-                              <p><label for="fname">Your Name</label> <br>
-                                <input type="text" id="fname" name="firstname" placeholder="Your name.."></p>  
 
-                                <p><label for="email">Email</label> <br>
-                                <input type="email" id="email" name="email" placeholder="Your email.."></p>
+                                <p>
+                                    <input aria-label="2002 Jeep Wrangler" type="text" id="subject" class="listing__contact--text listing__contact--readonly" name="subject" 
+                                    placeholder="Subject: 2002 Jeep Wranger" value="Subject: 2002 Jeep Wrangler" readonly>
+                                </p>
 
-                                <p><label for="message">Message</label> <br>
-                                <textarea id="message" name="message" placeholder="Write something.." style="height:150px; width:100%;"></textarea></p>
+                                <p>
+                                <input aria-label="Your Name" type="text" id="fname" name="name" class="listing__contact--text" placeholder="Name..."></p>  
+
+                                <p>
+                                <input aria-label="Your Email Address" type="email" id="email" name="email" class="listing__contact--text" placeholder="Email address.."></p>
+
+                                <p>
+                                <textarea aria-label="Your Message" id="message" name="message" placeholder="Notes to seller.." style="height:150px; width:100%;"></textarea></p>
                         </div>
                     </div>
                     <div class="card__action">
