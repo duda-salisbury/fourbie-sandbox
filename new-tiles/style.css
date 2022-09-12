@@ -7,6 +7,15 @@ html {
     font-family: 'Oswald', sans-serif;
 }
 
+.list-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0 20px;
+}
+
 /** Make a Material Design Card */
 .card__wrap {
   background-color: #fff;
@@ -37,6 +46,7 @@ html {
   height: 460px;
   perspective: 1000px;
   -webkit-perspective: 1000px;
+  margin:10px;
 }
 
 .card.flip .card__wrap {
@@ -134,11 +144,13 @@ html {
   border-radius:30px;
   padding:5px 20px;
   background-color:rgba(0,0,0,0.7);
+  letter-spacing: 1px;
   color:#fff;
 }
 
 .card__action--button:hover {
-  color: #eee;
+  color: #040314;
+  background: #fff;
 }
 
 .card__action--button-green {
@@ -151,9 +163,9 @@ html {
     /* border-radius:30px; */
     background-color: rgba(0,0,0,0.8);
     display: inline-block;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: 400;
-    padding: 5px 10px;
+    padding: 8px 10px;
     text-transform: uppercase;
     text-decoration: none;;
 }
@@ -173,6 +185,19 @@ html {
    top: 140px;
    left: 15px;
    color:#fff;
+}
+
+.listing__price--auction {
+    background-color:rgba(235,100,50,0.81);
+    color:#fff;
+}
+
+.listing__price--sold {
+  background-color: rgba(255, 24, 0, 0.7);
+}
+
+.listing__price--inquire {
+  background-color: rgba(215, 193, 0, 0.7); 
 }
 
 .listing__details span {

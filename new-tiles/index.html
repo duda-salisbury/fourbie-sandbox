@@ -12,62 +12,241 @@
     </head>
     <body>
         
-        <code>Updated 12 september 2022 - 13:53</code>
-        <div class="card listing">
-            <div class="card__wrap">
-                <div class="card__front">
-                    <div class="card__image">
-                        <img src="https://images.unsplash.com/photo-1595392004747-3d9b64a4b013?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=50" alt="image">
-                    </div>
-                    <div class="card__content">
-                        <h2 class="card__title">2002 Jeep Wrangler</h2>
-                        <p class="card__text">4.0L I6, Automatic, 4x4, Original Miles, Lifted, Rust Free</p>
-                        <span class="listing__price listing__pill">$9,500</span>
-                        <div class="listing__details">
-                            <span class="listing__details--miles"><i class="fa fa-tachometer"></i>Miles: 174,000</span>
-                            <span class="list__details--seller"><i class="fa fa-external-link"></i><a href="#">Go Motors, USA</a></span>
-                            <span class="listing__details--location"><i class="fa fa-map-marker"></i>Plainfield, CT</span>
+        <code>Updated 12 september 2022 - 16:18</code>
+
+        <div class="list-wrap">
+            <div class="card listing">
+                <div class="card__wrap">
+                    <div class="card__front">
+                        <div class="card__image">
+                            <img src="https://images.unsplash.com/photo-1595392004747-3d9b64a4b013?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=50" alt="image">
+                        </div>
+                        <div class="card__content">
+                            <h2 class="card__title">2002 Jeep Wrangler</h2>
+                            <p class="card__text">4.0L I6, Automatic, 4x4, Original Miles, Lifted, Rust Free</p>
+                            <span class="listing__price listing__pill listing__price--normal">$9,500</span>
+                            <!-- <span class="listing__price listing__pill listing__price--auction">Auction</span> -->
+                            <div class="listing__details">
+                                <span class="listing__details--miles"><i class="fa fa-tachometer"></i>Miles: 174,000</span>
+                                <span class="list__details--seller"><i class="fa fa-external-link"></i><a href="#">Go Motors, USA</a></span>
+                                <span class="listing__details--location"><i class="fa fa-map-marker"></i>Plainfield, CT</span>
+                            </div>
+                        </div>
+
+                        <div class="card__action">
+                            <a href="#" class="card__action--button contact">Contact</a>
+                            <a href="#" class="card__action--button card__action--button-green">View <i class="fa fa-magnifying"></i> </a>
                         </div>
                     </div>
 
-                    <div class="card__action">
-                        <a href="#" class="card__action--button contact">Contact</a>
-                        <a href="#" class="card__action--button card__action--button-green">View <i class="fa fa-magnifying"></i> </a>
-                    </div>
-                </div>
+                    <div class="card__back">
+                        <div class="card__content">
+                            
+                            <h2 class="card__title">Contact Seller</h2>
+                            <h3 class="card__subtitle">Go Motors, USA</h3>
 
-                <div class="card__back">
-                    <div class="card__content">
-                        
-                        <h2 class="card__title">Contact Seller</h2>
-                        <h3 class="card__subtitle">Go Motors, USA</h3>
+                            <div class="listing__contact">
+                                <!--Quick Contact Form-->
+                                <form action="/action_page.php">
 
-                        <div class="listing__contact">
-                            <!--Quick Contact Form-->
-                            <form action="/action_page.php">
+                                    <p>
+                                        <input aria-label="2002 Jeep Wrangler" type="text" id="subject" class="listing__contact--text listing__contact--readonly" name="subject" 
+                                        placeholder="Subject: 2002 Jeep Wranger" value="Subject: 2002 Jeep Wrangler" readonly>
+                                    </p>
 
-                                <p>
-                                    <input aria-label="2002 Jeep Wrangler" type="text" id="subject" class="listing__contact--text listing__contact--readonly" name="subject" 
-                                    placeholder="Subject: 2002 Jeep Wranger" value="Subject: 2002 Jeep Wrangler" readonly>
-                                </p>
+                                    <p>
+                                    <input aria-label="Your Name" type="text" id="fname" name="name" class="listing__contact--text" placeholder="Name..."></p>  
 
-                                <p>
-                                <input aria-label="Your Name" type="text" id="fname" name="name" class="listing__contact--text" placeholder="Name..."></p>  
+                                    <p>
+                                    <input aria-label="Your Email Address" type="email" id="email" name="email" class="listing__contact--text" placeholder="Email address.."></p>
 
-                                <p>
-                                <input aria-label="Your Email Address" type="email" id="email" name="email" class="listing__contact--text" placeholder="Email address.."></p>
-
-                                <p>
-                                <textarea aria-label="Your Message" id="message" name="message" placeholder="Notes to seller.." style="height:150px; width:100%;"></textarea></p>
+                                    <p>
+                                    <textarea aria-label="Your Message" id="message" name="message" placeholder="Notes to seller.." style="height:150px; width:100%;"></textarea></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card__action">
-                        <a href="#contact" class="card__action--button card__action--button contact">Cancel</a>
-                        <a href="#send" class="card__action--button card__action--button-green">Send</a>
+                        <div class="card__action">
+                            <a href="#contact" class="card__action--button card__action--button contact">Cancel</a>
+                            <a href="#send" class="card__action--button card__action--button-green">Send</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+            <div class="card listing">
+                <div class="card__wrap">
+                    <div class="card__front">
+                        <div class="card__image">
+                            <img src="https://images.unsplash.com/photo-1595392004747-3d9b64a4b013?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=50" alt="image">
+                        </div>
+                        <div class="card__content">
+                            <h2 class="card__title">2002 Jeep Wrangler</h2>
+                            <p class="card__text">4.0L I6, Automatic, 4x4, Original Miles, Lifted, Rust Free</p>
+                            <!-- <span class="listing__price listing__pill listing__price--normal">$9,500</span> -->
+                            <span class="listing__price listing__pill listing__price--auction">Auction</span>
+                            <div class="listing__details">
+                                <span class="listing__details--miles"><i class="fa fa-tachometer"></i>Miles: 174,000</span>
+                                <span class="list__details--seller"><i class="fa fa-external-link"></i><a href="#">Go Motors, USA</a></span>
+                                <span class="listing__details--location"><i class="fa fa-map-marker"></i>Plainfield, CT</span>
+                            </div>
+                        </div>
+
+                        <div class="card__action">
+                            <a href="#" class="card__action--button contact">Contact</a>
+                            <a href="#" class="card__action--button card__action--button-green">View <i class="fa fa-magnifying"></i> </a>
+                        </div>
+                    </div>
+
+                    <div class="card__back">
+                        <div class="card__content">
+                            
+                            <h2 class="card__title">Contact Seller</h2>
+                            <h3 class="card__subtitle">Go Motors, USA</h3>
+
+                            <div class="listing__contact">
+                                <!--Quick Contact Form-->
+                                <form action="/action_page.php">
+
+                                    <p>
+                                        <input aria-label="2002 Jeep Wrangler" type="text" id="subject" class="listing__contact--text listing__contact--readonly" name="subject" 
+                                        placeholder="Subject: 2002 Jeep Wranger" value="Subject: 2002 Jeep Wrangler" readonly>
+                                    </p>
+
+                                    <p>
+                                    <input aria-label="Your Name" type="text" id="fname" name="name" class="listing__contact--text" placeholder="Name..."></p>  
+
+                                    <p>
+                                    <input aria-label="Your Email Address" type="email" id="email" name="email" class="listing__contact--text" placeholder="Email address.."></p>
+
+                                    <p>
+                                    <textarea aria-label="Your Message" id="message" name="message" placeholder="Notes to seller.." style="height:150px; width:100%;"></textarea></p>
+                            </div>
+                        </div>
+                        <div class="card__action">
+                            <a href="#contact" class="card__action--button card__action--button contact">Cancel</a>
+                            <a href="#send" class="card__action--button card__action--button-green">Send</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card listing">
+                <div class="card__wrap">
+                    <div class="card__front">
+                        <div class="card__image">
+                            <img src="https://images.unsplash.com/photo-1595392004747-3d9b64a4b013?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=50" alt="image">
+                        </div>
+                        <div class="card__content">
+                            <h2 class="card__title">2002 Jeep Wrangler</h2>
+                            <p class="card__text">4.0L I6, Automatic, 4x4, Original Miles, Lifted, Rust Free</p>
+                            <!-- <span class="listing__price listing__pill listing__price--normal">$9,500</span> -->
+                            <!-- <span class="listing__price listing__pill listing__price--auction">Auction</span> -->
+                            <span class="listing__price listing__pill listing__price--sold">SOLD</span>
+                            <div class="listing__details">
+                                <span class="listing__details--miles"><i class="fa fa-tachometer"></i>Miles: 174,000</span>
+                                <span class="list__details--seller"><i class="fa fa-external-link"></i><a href="#">Go Motors, USA</a></span>
+                                <span class="listing__details--location"><i class="fa fa-map-marker"></i>Plainfield, CT</span>
+                            </div>
+                        </div>
+
+                        <div class="card__action">
+                            <a href="#" class="card__action--button contact">Contact</a>
+                            <a href="#" class="card__action--button card__action--button-green">View <i class="fa fa-magnifying"></i> </a>
+                        </div>
+                    </div>
+
+                    <div class="card__back">
+                        <div class="card__content">
+                            
+                            <h2 class="card__title">Contact Seller</h2>
+                            <h3 class="card__subtitle">Go Motors, USA</h3>
+
+                            <div class="listing__contact">
+                                <!--Quick Contact Form-->
+                                <form action="/action_page.php">
+
+                                    <p>
+                                        <input aria-label="2002 Jeep Wrangler" type="text" id="subject" class="listing__contact--text listing__contact--readonly" name="subject" 
+                                        placeholder="Subject: 2002 Jeep Wranger" value="Subject: 2002 Jeep Wrangler" readonly>
+                                    </p>
+
+                                    <p>
+                                    <input aria-label="Your Name" type="text" id="fname" name="name" class="listing__contact--text" placeholder="Name..."></p>  
+
+                                    <p>
+                                    <input aria-label="Your Email Address" type="email" id="email" name="email" class="listing__contact--text" placeholder="Email address.."></p>
+
+                                    <p>
+                                    <textarea aria-label="Your Message" id="message" name="message" placeholder="Notes to seller.." style="height:150px; width:100%;"></textarea></p>
+                            </div>
+                        </div>
+                        <div class="card__action">
+                            <a href="#contact" class="card__action--button card__action--button contact">Cancel</a>
+                            <a href="#send" class="card__action--button card__action--button-green">Send</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card listing">
+                <div class="card__wrap">
+                    <div class="card__front">
+                        <div class="card__image">
+                            <img src="https://images.unsplash.com/photo-1595392004747-3d9b64a4b013?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=50" alt="image">
+                        </div>
+                        <div class="card__content">
+                            <h2 class="card__title">2002 Jeep Wrangler</h2>
+                            <p class="card__text">4.0L I6, Automatic, 4x4, Original Miles, Lifted, Rust Free</p>
+                            <!-- <span class="listing__price listing__pill listing__price--normal">$9,500</span> -->
+                            <!-- <span class="listing__price listing__pill listing__price--auction">Auction</span> -->
+                            <!-- <span class="listing__price listing__pill listing__price--sold">SOLD</span> -->
+                            <span class="listing__price listing__pill listing__price--inquire">Inquire</span>
+                            <div class="listing__details">
+                                <span class="listing__details--miles"><i class="fa fa-tachometer"></i>Miles: 174,000</span>
+                                <span class="list__details--seller"><i class="fa fa-external-link"></i><a href="#">Go Motors, USA</a></span>
+                                <span class="listing__details--location"><i class="fa fa-map-marker"></i>Plainfield, CT</span>
+                            </div>
+                        </div>
+
+                        <div class="card__action">
+                            <a href="#" class="card__action--button contact">Contact</a>
+                            <a href="#" class="card__action--button card__action--button-green">View <i class="fa fa-magnifying"></i> </a>
+                        </div>
+                    </div>
+
+                    <div class="card__back">
+                        <div class="card__content">
+                            
+                            <h2 class="card__title">Contact Seller</h2>
+                            <h3 class="card__subtitle">Go Motors, USA</h3>
+
+                            <div class="listing__contact">
+                                <!--Quick Contact Form-->
+                                <form action="/action_page.php">
+
+                                    <p>
+                                        <input aria-label="2002 Jeep Wrangler" type="text" id="subject" class="listing__contact--text listing__contact--readonly" name="subject" 
+                                        placeholder="Subject: 2002 Jeep Wranger" value="Subject: 2002 Jeep Wrangler" readonly>
+                                    </p>
+
+                                    <p>
+                                    <input aria-label="Your Name" type="text" id="fname" name="name" class="listing__contact--text" placeholder="Name..."></p>  
+
+                                    <p>
+                                    <input aria-label="Your Email Address" type="email" id="email" name="email" class="listing__contact--text" placeholder="Email address.."></p>
+
+                                    <p>
+                                    <textarea aria-label="Your Message" id="message" name="message" placeholder="Notes to seller.." style="height:150px; width:100%;"></textarea></p>
+                            </div>
+                        </div>
+                        <div class="card__action">
+                            <a href="#contact" class="card__action--button card__action--button contact">Cancel</a>
+                            <a href="#send" class="card__action--button card__action--button-green">Send</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
 
     <script>
         let allContacts = document.querySelectorAll('.contact');
