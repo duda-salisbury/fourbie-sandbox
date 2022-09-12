@@ -41,6 +41,10 @@ html {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+
+  -webkit-perspective: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0,0,0);
 }
 
 .card.flip .card__front .card__action {
