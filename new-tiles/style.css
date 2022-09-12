@@ -1,5 +1,3 @@
-
-
 * {
     box-sizing: border-box;
 }
@@ -43,6 +41,10 @@ html {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+}
+
+.card.flip .card__front .card__action {
+  pointer-events: none;
 }
 
 .card__front {
@@ -125,9 +127,14 @@ html {
   color: #eee;
 }
 
+.card__action--button-green {
+  background-color: #4caf50;
+  color:#fff;
+}
+
 
 .listing__pill {
-    border-radius:30px;
+    /* border-radius:30px; */
     background-color: rgba(0,0,0,0.8);
     display: inline-block;
     font-size: 1.1rem;
@@ -161,6 +168,10 @@ html {
 .listing__details i {
     display:inline-block;
     width:24px;
+}
+
+.listing.card .card__content a{
+  color:#333
 }
 
 

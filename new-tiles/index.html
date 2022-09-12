@@ -8,12 +8,12 @@
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
         <!-- Source Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         
 
-        <div class="card">
+        <div class="card listing">
             <div class="card__wrap">
                 <div class="card__front">
                     <div class="card__image">
@@ -24,20 +24,21 @@
                         <p class="card__text">4.0L I6, Automatic, 4x4, Original Miles, Lifted, Rust Free</p>
                         <span class="listing__price listing__pill">$9500</span>
                         <div class="listing__details">
-                            <span class="listing__details--miles"><i class="fa fa-tachometer"></i> Miles: 174,000</span>
+                            <span class="listing__details--miles"><i class="fa fa-tachometer"></i>Miles: 174,000</span>
                             <span class="list__details--seller"><i class="fa fa-external-link"></i><a href="#">Go Motors, USA</a></span>
-                            <span class="listing__details--location"><i class="fa fa-map-marker"></i> Plainfield, CT</span>
+                            <span class="listing__details--location"><i class="fa fa-map-marker"></i>Plainfield, CT</span>
                         </div>
                     </div>
 
                     <div class="card__action">
-                        <a href="#" class="card__action--button card__action--button-green contact">Contact</a>
-                        <a href="#" class="card__action--button card__action--button-green">View</a>
+                        <a href="#" class="card__action--button contact">Contact</a>
+                        <a href="#" class="card__action--button card__action--button-green">View <i class="fa fa-magnifying"></i> </a>
                     </div>
                 </div>
 
                 <div class="card__back">
                     <div class="card__content">
+                        
                         <h2 class="card__title">Contact Seller</h2>
                         <div class="listing__contact">
                             <!--Quick Contact Form-->
@@ -49,8 +50,12 @@
                                 <input type="email" id="email" name="email" placeholder="Your email.."></p>
 
                                 <p><label for="message">Message</label> <br>
-                                <textarea id="message" name="message" placeholder="Write something.." style="height:200px; width:100%;"></textarea></p>
+                                <textarea id="message" name="message" placeholder="Write something.." style="height:150px; width:100%;"></textarea></p>
                         </div>
+                    </div>
+                    <div class="card__action">
+                        <a href="#contact" class="card__action--button card__action--button contact">Cancel</a>
+                        <a href="#send" class="card__action--button card__action--button-green">Send</a>
                     </div>
                 </div>
             </div>
