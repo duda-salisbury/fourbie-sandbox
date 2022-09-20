@@ -1,52 +1,80 @@
 <template>
   <div class="home">
-    <v-row no-gutters
-      class="mt-1"
-    >
-      <v-col
-        cols="12"
-        md="8">
-        <v-img
-          class="fill-height"
-          
-          :src  = "require('../assets/vehicle-demo/hero.jpg')"
-        />
+
+  <v-container
+   class="vehicle-lede pt-5 pb-5"
+  >
+
+    <v-row>
+      <v-col cols="12">
+        <div>
+          <h1 class="display-1">1996 Toyota Hilux Surf SSR-G Wide 4x4</h1>
+        </div>
       </v-col>
-      <v-col
-        cols="12"
-        md="4">
-        <v-row no-gutters>
+    </v-row>
+      <v-row no-gutters
+        class="mt-1 vehicle__gallery-wrap fill-height"
+      >
         <v-col
-          v-for="n in 12"
-          :key="n"
-          cols="4"
-        >
+          cols="12"
+          md="8"
+          class="vehicle__gallery--hero-wrap">
           <v-img
-            :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
-            :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
-            aspect-ratio="1"
-            class="grey lighten-2"
-          >
-            <template v-slot:placeholder>
-              <v-row
-                class="fill-height ma-0"
-                align="center"
-                justify="center"
-              >
-                <v-progress-circular
-                  indeterminate
-                  color="grey lighten-5"
-                ></v-progress-circular>
-              </v-row>
-            </template>
-          </v-img>
+            class="fill-height"
+            
+            :src  = "require('../assets/vehicle-demo/hero.jpg')"
+          />
         </v-col>
-      </v-row>
-    </v-col>
-  </v-row>
+        <v-col
+          cols="12"
+          md="4">
+          <v-row no-gutters>
+          <v-col
+            v-for="n in 12"
+            :key="n"
+            cols="4"
+            
+          >
+            <v-img
+              :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
+              :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
+              class="grey lighten-2"
+              max-height="17vh"
+              aspect-ratio="1"
+            >
+            </v-img>
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col cols="12">
+        <v-sheet
+          color="white"
+          elevation="3"
+          class="pa-4"
+        >test one two three</v-sheet>
+        </v-col>
+    </v-row>
+  </v-container>
   </div>
 </template>
 
+<style scoped>
+  .home {
+    padding-top:72px;
+  }
+
+  .vehicle__gallery--hero-wrap {
+    max-height:68vh;
+  }
+
+  .auction__preview {
+    
+  }
+
+  
+</style>
 <script>
 // @ is an alias to /src
 
