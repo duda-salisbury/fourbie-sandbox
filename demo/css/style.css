@@ -175,3 +175,13 @@ html {
   }
 
   /** End Auction Image Gallery **/
+
+  /** Auctions Ending Soon **/
+  .fe-auctionsEndingSoon {
+    display: flex;
+  }
+
+  .fe-auctionsEndingSoon__item {
+    width: 50%;
+    padding: 10px;
+  }
