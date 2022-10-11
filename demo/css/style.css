@@ -6,6 +6,14 @@
     max-width: 1400px !important;
 }
 
+h1, h2, h3, h4, h5, h5, h6 {
+    font-family: 'Oswald', sans-serif!important;
+}
+
+p, li, span {
+    font-family: 'Monseratt', sans-serif!important;
+}
+
 /** round the bootstrap buttons **/
 .btn {
     border-radius: 30px !important;
@@ -13,6 +21,11 @@
     text-transform: uppercase;
     font-weight: 400!important;
     letter-spacing: 1px;
+    font-size:1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    /** Oswald Font **/
+    font-family: 'Oswald', sans-serif;
 }
 
 .btn-primary {
@@ -64,13 +77,14 @@
     font-size: 2rem;
     font-weight: 700;
     text-align: left;
-
+    text-transform: uppercase;
 }
 
 .fourbie__auctionHero h2 {
     color: #fff;
     font-size: 1rem;
     text-align: left;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /** Auction Info Bar **/
@@ -99,12 +113,12 @@
 }
 
 .fe-auctionInfoBar__countdown span {
-    font-size: 18px;
+    font-size: 14px;
     display: block;
     text-align: center;
     background-color: #040314;
     color: #fff;
-    padding: 5px 7px;
+    padding: 10px 12px;
     border-radius: 0px;
     margin: 0px 5px;
 }
@@ -155,6 +169,7 @@
 
 .fe-auctionInfoBar__nav a {
     margin: 0px 5px;
+
 }
 
 /** End Auction Info Bar **/
