@@ -1,187 +1,216 @@
-html {
-    font-size: 14px;
-  }
-  @media (min-width: 768px) {
-    html {
-      font-size: 16px;
-    }
-  }
-  
-  .container {
-    max-width: 1400px!important;
-  }
-  
-  .pricing-header {
-    max-width: 700px;
-  }
-  
-  .card-deck .card {
-    min-width: 220px;
-  }
-  
-  .border-top { border-top: 1px solid #e5e5e5; }
-  .border-bottom { border-bottom: 1px solid #e5e5e5; }
-  
-  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+* {
+    box-sizing: border-box;
+}
 
-  .fourbie-brand-header {
-    max-height:64px;
+.container {
+    max-width: 1400px !important;
+}
+
+/** round the bootstrap buttons **/
+.btn {
+    border-radius: 30px !important;
+    padding:8px 24px !important;
+    text-transform: uppercase;
+    font-weight: 400!important;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+    background-color:#eb6432 !important;
+    border-color:#eb6432 !important;
+    color:#FFF;
+}
+
+.btn-secondary {
+    background-color: rgb(65, 100, 56)!important;
+    border-color:rgb(65, 100, 56)!important;
+    color:#FFF;
+}
+
+.fourbie-brand-header {
+    max-height: 64px;
     position: relative;
     z-index: 9999;
-  }
+}
 
-  .fourbie-logo {
+.fourbie-logo {
     position: relative;
-    bottom:-20px;
-  }
+    bottom: -20px;
+}
 
-  .fourbie__auctionHero {
-    background-color:#040314;
+.fourbie__auctionHero {
+    background-color: #040314;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-bottom:50px;
-    padding-top:80px;
-    position:sticky;
-    height:240px;
-    top:-1px;
+    padding-bottom: 50px;
+    padding-top: 80px;
+    position: sticky;
+    height: 240px;
+    top: -1px;
     z-index: 998;
-    margin-bottom:20px;
-    transition: 0.5s;
-  }
+    margin-bottom: 20px;
+    transition: 0.75s;
+}
 
-  .fourbie__auctionHero.is-pinned {
+.fourbie__auctionHero.is-pinned {
     height: 120px;
-    padding-top:20px;
-    padding-bottom:10px;
-  }
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
 
-  .fourbie__auctionHero h1 {
+.fourbie__auctionHero h1 {
     color: #fff;
     font-size: 2rem;
     font-weight: 700;
     text-align: left;
-    
-  }
 
-  .fourbie__auctionHero h2 {
+}
+
+.fourbie__auctionHero h2 {
     color: #fff;
     font-size: 1rem;
     text-align: left;
-  }
+}
 
-  /** Auction Info Bar **/
-    .fe-auctionInfoBar {
-        transition: 0.5s;
-        z-index: 998;
-        background-color: #f7f9fb;
-        /** Material Design Box Shadow **/
-        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);
-        color:#040314;
-        align-items: center;
-        display: flex;
-        justify-content: space-around;
-        position: relative;
-        bottom:-10px;
-        align-items: stretch;
-    }
+/** Auction Info Bar **/
+.fe-auctionInfoBar {
+    transition: 0.5s;
+    z-index: 998;
+    background-color: #f7f9fb;
+    /** Material Design Box Shadow **/
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    color: #040314;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    bottom: -10px;
+    align-items: stretch;
+    text-indent: center;
+    ;
+}
 
-    .fe-auctionInfoBar>div{
-        display: flex;
-        align-items: center;
-    }
+.fe-auctionInfoBar>div {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+}
 
-    .fe-auctionInfoBar__countdown span {
-        font-size:18px;
-        display: block;
-        text-align: center;
-        background-color:#040314;
-        color:#fff;
-        padding:2px 7px;
-        border-radius: 10px;
-        margin:0px 5px;
-    }
+.fe-auctionInfoBar__countdown span {
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    background-color: #040314;
+    color: #fff;
+    padding: 5px 7px;
+    border-radius: 0px;
+    margin: 0px 5px;
+}
 
 
-    .fe-auctionInfoBar__countdown {
-        display: flex;
-        align-items: center;
-    }
+.fe-auctionInfoBar__countdown {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    width: 30%;
+}
 
-   
-    .fe-auctionInfoBar__currentBid {
-        background-color:rgb(65, 100, 56);
-        color:#fff;
-        display: flex;
-        flex-direction: column-reverse;
-        min-width: 200px;
-        padding:5px 5px;
-    }
-    .fe-auctionInfoBar__currentBid h3, .fe-auctionInfoBar__comments h3 {
-        font-size: 14px;
-        text-transform: lowercase;
-    }
 
-    .fe-auctionInfoBar__comments {
-        display: flex;
-        flex-direction: column-reverse;
-        min-width: 200px;
-    }
 
-    /** End Auction Info Bar **/
+.fe-auctionInfoBar__currentBid {
+    background-color: rgb(65, 100, 56);
+    color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    min-width: 200px;
+    padding: 10px 5px;
+}
 
-  /** Auction Image Gallery **/
+.fe-auctionInfoBar__currentBid h5,
+.fe-auctionInfoBar__comments h5 {
+    margin-bottom: 1px;
+}
 
-  .fe-vehicleGallery {
-    margin-bottom:20px;
-  }
+.fe-auctionInfoBar__currentBid h3,
+.fe-auctionInfoBar__comments h3 {
+    font-size: 14px;
+    text-transform: lowercase;
+    margin-bottom: 1px;
+}
 
-  .fe-vehicleGallery__mainImage img {
-    width:100%;
-    height:500px;
+.fe-auctionInfoBar__comments {
+    display: flex;
+    flex-direction: column-reverse;
+    min-width: 200px;
+    padding: 10px 5px;
+    background-color: rgba(4, 3, 20, 0.82);
+    color: #fff;
+}
+
+.fe-auctionInfoBar__nav {
+    width: 25%;
+}
+
+.fe-auctionInfoBar__nav a {
+    margin: 0px 5px;
+}
+
+/** End Auction Info Bar **/
+
+/** Auction Image Gallery **/
+
+.fe-vehicleGallery {
+    margin-bottom: 20px;
+}
+
+.fe-vehicleGallery__mainImage img {
+    width: 100%;
+    height: 500px;
     object-fit: cover;
-  }
+}
 
-  .fe-vehicleGallery__thumbnails {
-    height:500px;
+.fe-vehicleGallery__thumbnails {
+    height: 500px;
     overflow: hidden;
-    width:100%;
-  }
+    width: 100%;
+}
 
-  .fe-vehicleGallery__thumbnails li {
+.fe-vehicleGallery__thumbnails li {
     list-style: none;
-    width:50%;
-    padding:2px;
-    height:166.7px;
-  }
+    width: 50%;
+    padding: 1px;
+    height: 166.7px;
+}
 
-  .fe-vehicleGallery__thumbnails li img {
-    width:100%;
-    height:100%;
+.fe-vehicleGallery__thumbnails li img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    cursor:pointer;
-  }
+    cursor: pointer;
+}
 
-  .fe-vehicleGallery__thumbnails li img:hover {
-    opacity:0.8;
-  }
+.fe-vehicleGallery__thumbnails li img:hover {
+    opacity: 0.8;
+}
 
-  .fe-vehicleGallery__thumbnails ul {
+.fe-vehicleGallery__thumbnails ul {
     display: flex;
     flex-wrap: wrap;
-    margin:0px;
+    margin: 0px;
     justify-content: space-between;
-    padding:0px;
-  }
+    padding: 0px;
+}
 
-  /** End Auction Image Gallery **/
+/** End Auction Image Gallery **/
 
-  /** Auctions Ending Soon **/
-  .fe-auctionsEndingSoon {
+/** Auctions Ending Soon **/
+.fe-auctionsEndingSoon {
     display: flex;
-  }
+}
 
-  .fe-auctionsEndingSoon__item {
-    width: 50%;
-    padding: 10px;
-  }
+.fe-auctionsEndingSoon__item {
+    margin-top:5px;
+    margin-bottom:5px;
+}
