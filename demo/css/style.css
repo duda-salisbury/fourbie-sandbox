@@ -213,4 +213,25 @@
 .fe-auctionsEndingSoon__item {
     margin-top:5px;
     margin-bottom:5px;
+    border:none!important;
+    height:240px;
+    overflow: hidden;
+}
+
+
+.fe-auctionsEndingSoon__item .card-body {
+    padding: 5px 1px;
+}
+
+.fe-auctionsEndingSoon__item .card-title {
+    font-size:16px;
+    margin-bottom: 3px;
+}
+
+.fe-auctionsEndingSoon__item p {
+    font-size:14px;
+}
+
+.fe-auctionsEndingSoon__item:hover img {
+    opacity: 0.8;
 }
