@@ -19,12 +19,13 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    
+
   <title>FE - 1996 Toyota Hilux Surf - Fourbie</title>
 </head>
 
 <body>
-  <div
-    class="container fourbie-brand-header d-flex flex-column flex-md-row align-items-center mb-0 bg-white border-bottom box-shadow">
+  <div class="container fourbie-brand-header d-flex flex-column flex-md-row align-items-center mb-0 bg-white border-bottom box-shadow">
     <div class="my-0 mr-md-auto font-weight-normal">
       <img class="fourbie-logo" src="img/fourbie-logo.png" alt="Fourbie Exchange Logo" width="120">
     </div>
@@ -46,44 +47,55 @@
     <a class="btn btn-outline-primary" href="#">Log In</a>
   </div>
 
-  <div class="fourbie__auctionHero fe-sticky">
+  <div class="fe-auctionHero fe-sticky">
     <div class="container">
       <div class="row">
-        <div class="col-12"><span class="badge badge-primary">No Reserve</span>
-          <h1 class="fourbie__auctionHero__title">1996 Toyota Hilux Surf </h1>
+        <div class="col-6 align-middle fe-auctionHero__head">
+          <span class="badge badge-primary">No Reserve</span> 
+
+          <span>
+            <a href="#" class="fe-addToWatchlist" title="Add to Watchlist">
+            <i class="fa fa-heart-o"></i></a>
+          </span>
+
+          <h1 class="fe-auctionHero__title">1996 Toyota Hilux Surf</h1>
           <h2>Japanese-Market 4Runner, Turbodiesel Power, 4WD, Mostly Unmodified</h2>
+            
+
         </div>
+        <div class="col-6">
+          <div class="fe-auctionInfoBar">
+
+            <div class="fe-auctionInfoBar__bidInfo">
+              <div class="fe-auctionInfoBar__currentBid">
+                <h3>Current Bid</h3>
+                <h5>$14,447,500</h5>
+              </div>
+    
+              <div class="fe-auctionInfoBar__numberOfBids">
+                <h3># Bids</h3>
+                <h5>0</h5>
+              </div>
+
+              
+          </div>
+          <div class="fe-auctionInfoBar__countdown">
+            <h3>Time Left</h3>
+            <h5>5 days</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="fe-auctionHero__nav col-6">
+        <a href="#" class="btn btn-secondary" role="button">Gallery</a>
+        <a href="#" class="btn btn-secondary" role="button">Details</a>
+        <a href="#" class="btn btn-primary" role="button">Bid</a>
+      </div> -->
       </div>
     </div>
 
     <div class="container">
-      <div class="fe-auctionInfoBar">
-        <div class="fe-auctionInfoBar__countdown">
-          <span>2 Days</span>
-          <span>12 Hours</span>
-          <span>45 Minutes</span>
-          <span>23 Seconds</span>
-        </div>
 
-        <div>
-          <div class="fe-auctionInfoBar__currentBid">
-            <h3>Current Bid</h3>
-            <h5>$14,447,500</h5>
-          </div>
-
-          <div class="fe-auctionInfoBar__numberOfBids">
-            <h3># Bids</h3>
-            <h5>0</h5>
-          </div>
-      </div>
-
-        <div class="fe-auctionInfoBar__nav">
-          
-          <a href="#" class="btn btn-secondary" role="button">Gallery</a>
-          <a href="#" class="btn btn-secondary" role="button">Details</a>
-          <a href="#" class="btn btn-primary" role="button">Bid</a>
-        </div>
-      </div>
     </div>
   </div>
 
@@ -123,7 +135,7 @@
 <!--End Image Gallery -->
 
 
-  <main class="fe-AuctionBody container">
+  <main class="fe-auctionBody container">
 
 
 
@@ -184,11 +196,11 @@
 
       <aside class="col-md-4 blog-sidebar">
         <div class="card fe-sellerInfo mb-3">
-          <div class="card-header">About The Seller</div>
-          <div class="card-body">
+          
+          <div class="card-body"><span class="badge badge-primary">About the Seller</span>
             <h5 class="card-title">Go Motors, USA</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary btn-block">Seller Profile</a>
+            <a href="#" class="btn btn-accent btn-block">Seller Profile</a>
           </div>
         </div>
 

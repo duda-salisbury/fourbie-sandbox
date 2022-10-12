@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     const stickyElements = [
         ['.fe-auctionInfoBar', 220],
-        ['.fourbie__auctionHero', 20],
+        ['.fe-auctionHero', 20],
 
     ];
 

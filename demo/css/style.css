@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: 'Montserrat', sans-serif!important;
+    font-size:18px;
+}
+
 .container {
     max-width: 1400px !important;
 }
@@ -11,12 +16,12 @@ h1, h2, h3, h4, h5, h5, h6 {
     text-transform: uppercase;
 }
 
-.fe-AuctionBody h1, .fe-AuctionBody h2, .fe-AuctionBody h3, .fe-AuctionBody h4, .fe-AuctionBody h5, .fe-AuctionBody h6 {
+.fe-auctionBody h1, .fe-auctionBody h2, .fe-auctionBody h3, .fe-auctionBody h4, .fe-auctionBody h5, .fe-auctionBody h6 {
     padding:10px 0px;
 }
 
 p, li, span {
-    font-family: 'Monseratt', sans-serif!important;
+    font-family: 'Montserrat', sans-serif!important;
 }
 
 ul {
@@ -24,7 +29,11 @@ ul {
 }
 
 li {
-    padding:10px 0px;
+    padding:8px 0px;
+}
+
+.badge {
+    font-weight:200!important;
 }
 
 /** round the bootstrap buttons **/
@@ -53,6 +62,11 @@ li {
     color:#FFF;
 }
 
+.btn-accent {
+    background-color: #4caf50;
+    color: #fff;
+}
+
 .fourbie-brand-header {
     max-height: 64px;
     position: relative;
@@ -64,40 +78,71 @@ li {
     bottom: -20px;
 }
 
-.fourbie__auctionHero {
+.fe-auctionHero {
     background-color: #fff;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    padding-bottom: 15px;
+    padding-top: 55px;
     position: sticky;
-    height: 240px;
+    height: 200px;
     top: -1px;
     z-index: 998;
     margin-bottom: 0px;
     transition: 0.75s;
+
+   
 }
 
-.fourbie__auctionHero.is-pinned {
-    height: 120px;
+.fe-auctionHero__head {
+   padding-top:20px; 
+}
+
+.fe-auctionHero.is-pinned .fe-auctionHero__head {
+    padding-top:2px;
+}
+
+.fe-auctionHero.is-pinned {
+    height: 130px;
     padding-top: 15px;
     padding-bottom: 15px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 
-.fourbie__auctionHero h1 {
+.fe-auctionHero h1 {
     color: #040314;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 800;
     text-align: left;
     text-transform: uppercase;
 }
 
-.fourbie__auctionHero h2 {
+.fe-auctionHero h2 {
     color: #040314;
-    font-size: 1rem;
+    font-size: 18px;
     text-align: left;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif!important;
+    text-transform: none;
+    font-weight: 400;
+}
+
+
+.fe-auctionHero__nav {
+    position: relative;
+    top:-10px;
+    z-index: 999;
+}
+
+.fe-auctionHero__nav a:first-child {
+    margin-left:0px;
+}
+
+.fe-auctionHero__nav a {
+    margin: 0px 5px;
+
 }
 
 /** Auction Info Bar **/
@@ -105,32 +150,30 @@ li {
 .fe-auctionInfoBar {
     transition: 0.5s;
     z-index: 998;
-    background-color: #fff;
     color: #040314;
     align-items: center;
     display: flex;
     justify-content: space-around;
-    position: relative;
-    bottom: -10px;
-    align-items: stretch;
-    text-indent: center;
+
+    align-items: flex-end;
+    flex-direction: column;
+
 }
 
 .fourbie__auctionHero.fourbie__auctionHero.is-pinned .fe-auctionInfoBar {
-        /** Material Design Box Shadow **/
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-        0 1px 5px 0 rgba(0, 0, 0, 0.12),
-        0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
+
+
 
 
 .fe-auctionInfoBar>div {
     display: flex;
     align-items: center;
     flex-grow: 1;
-    width:33%;
     justify-content: center;
     text-align: center;
+
+    width:250px;
 }
 
 .fe-auctionInfoBar__countdown span {
@@ -151,6 +194,18 @@ li {
     align-items: center;
     flex-grow: 0!important;
     justify-content: space-between!important;
+    background-color: #040314;
+    width:100%;
+
+    color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px 5px;
+    flex-grow:1!important;
+
+    /** Bottom Drop Shadow Material Design **/
+
+    box-shadow: 0px 5px 15px -5px #111; 
 }
 
 
@@ -160,19 +215,18 @@ li {
     color: #fff;
     display: flex;
     flex-direction: column-reverse;
-    min-width: 150px;
     padding: 10px 5px;
-    flex-grow:0!important;
+    flex-grow:1!important;
     
 }
 
 .fe-auctionInfoBar__currentBid h5,
-.fe-auctionInfoBar__numberOfBids h5 {
+.fe-auctionInfoBar__numberOfBids h5, .fe-auctionInfoBar__countdown h5 {
     margin-bottom: 1px;
 }
 
 .fe-auctionInfoBar__currentBid h3,
-.fe-auctionInfoBar__numberOfBids h3 {
+.fe-auctionInfoBar__numberOfBids h3, .fe-auctionInfoBar__countdown h3 {
     font-size: 14px;
     text-transform: lowercase;
     margin-bottom: 1px;
@@ -181,22 +235,14 @@ li {
 .fe-auctionInfoBar__numberOfBids {
     display: flex;
     flex-direction: column-reverse;
-    flex-grow:0!important;
-    min-width:150px;
+    flex-grow:1!important;
     padding: 10px 5px;
     background-color: rgba(4, 3, 20, 0.82);
     color: #fff;
 }
 
-.fe-auctionInfoBar__nav {
-    justify-content: flex-end;
-    
-}
 
-.fe-auctionInfoBar__nav a {
-    margin: 0px 5px;
 
-}
 
 /** End Auction Info Bar **/
 
@@ -249,11 +295,39 @@ li {
 
 /** About The Seller Callout **/
 .card.fe-sellerInfo {
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12),
-    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    background-color: #040314;
+    box-shadow: 0 15px 50px rgb(0 0 0 / 20%);
+    color:#fff;
+    border-radius: 0px;
+
 }
 
+.fe-sellerInfo .card-header {
+    /* font-family: 'Oswald', sans-serif;
+    color: #fff;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    border-bottom: none;
+    text-align: left;
+    font-weight: 600;
+
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.75px; */
+}
+
+/** Auction Body Stuff **/
+
+
+.fe-auctionBody {
+    border-left:2px solid #eee;
+}
+.blog-main {
+    border-right: 1px solid #eee;
+}
 /** Auctions Ending Soon **/
 .fe-auctionsEndingSoon {
     display: flex;
@@ -265,12 +339,12 @@ li {
     border:none!important;
     height:240px;
     overflow: hidden;
+    cursor:pointer;
 }
 
 .fe-auctionsEndingSoon__item h5 {
     padding-bottom:2px;
 }
-
 
 .fe-auctionsEndingSoon__item .card-body {
     padding: 5px 1px;
