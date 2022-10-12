@@ -254,12 +254,12 @@ li {
 
 .fe-vehicleGallery__mainImage img {
     width: 100%;
-    height: 700px;
+    height: 600px;
     object-fit: cover;
 }
 
 .fe-vehicleGallery__thumbnails {
-    height: 700px;
+    height: 600px;
     overflow: hidden;
 
     width: 100%;
