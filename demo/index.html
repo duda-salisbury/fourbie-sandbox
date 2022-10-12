@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Source Oswald Font -->
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
@@ -11,48 +12,51 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <!-- Source Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    
+  <link href="css/style.css" rel="stylesheet" type="text/css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>FE - 1996 Toyota Hilux Surf - Fourbie</title>
-  </head>
-  <body>
-      <div class="container fourbie-brand-header d-flex flex-column flex-md-row align-items-center mb-0 bg-white border-bottom box-shadow">
-        <div class="my-0 mr-md-auto font-weight-normal">
-          <img class="fourbie-logo" src="img/fourbie-logo.png" alt="Fourbie Exchange Logo" width="120">
-        </div>
-        <div class="mr-md-auto col-4">
-          <form>
-            <div class="form-row">
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Search...">
-              </div>
-            </div>
-          </form>
-        </div>
-      
-        <nav class="my-2 my-md-0 mr-md-3">
-          <a class="p-2 text-dark" href="#">Auctions</a>
-          <a class="p-2 text-dark" href="#">Listings</a>
-          <a class="p-2 text-dark" href="#">Sell</a>
-        </nav>
-        <a class="btn btn-outline-primary" href="#">Log In</a>
-      </div>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <div class="fourbie__auctionHero fe-sticky">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h1 class="fourbie__auctionHero__title">1996 Toyota Hilux Surf</h1>
-            <h2>Japanese-Market 4Runner, Turbodiesel Power, 4WD, Mostly Unmodified</h2>
+  <title>FE - 1996 Toyota Hilux Surf - Fourbie</title>
+</head>
+
+<body>
+  <div
+    class="container fourbie-brand-header d-flex flex-column flex-md-row align-items-center mb-0 bg-white border-bottom box-shadow">
+    <div class="my-0 mr-md-auto font-weight-normal">
+      <img class="fourbie-logo" src="img/fourbie-logo.png" alt="Fourbie Exchange Logo" width="120">
+    </div>
+    <div class="ml-md-auto col-5">
+      <form>
+        <div class="form-row">
+          <div class="col">
+            <input style="background-color:#eee;" type="text" class="form-control" placeholder="Search...">
           </div>
         </div>
-      </div>
+      </form>
+    </div>
 
-      <div class="container">
+    <nav class="my-2 my-md-0 mr-md-3">
+      <a class="p-2 text-dark" href="#">Auctions</a>
+      <a class="p-2 text-dark" href="#">Listings</a>
+      <a class="p-2 text-dark" href="#">Sell</a>
+    </nav>
+    <a class="btn btn-outline-primary" href="#">Log In</a>
+  </div>
+
+  <div class="fourbie__auctionHero fe-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12"><span class="badge badge-primary">No Reserve</span>
+          <h1 class="fourbie__auctionHero__title">1996 Toyota Hilux Surf </h1>
+          <h2>Japanese-Market 4Runner, Turbodiesel Power, 4WD, Mostly Unmodified</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
       <div class="fe-auctionInfoBar">
         <div class="fe-auctionInfoBar__countdown">
           <span>2 Days</span>
@@ -60,149 +64,229 @@
           <span>45 Minutes</span>
           <span>23 Seconds</span>
         </div>
-      
-        <div class="fe-auctionInfoBar__currentBid">
-          <h3>Current Bid</h3>
-          <h5>$14,447,500</h5>
-        </div>
-      
-        <div class="fe-auctionInfoBar__comments">
-          <h3># Bids</h3>
-          <h5>0</h5>
-        </div>
-      
+
+        <div>
+          <div class="fe-auctionInfoBar__currentBid">
+            <h3>Current Bid</h3>
+            <h5>$14,447,500</h5>
+          </div>
+
+          <div class="fe-auctionInfoBar__numberOfBids">
+            <h3># Bids</h3>
+            <h5>0</h5>
+          </div>
+      </div>
+
         <div class="fe-auctionInfoBar__nav">
-          <!--on-page nav-->
-            <a href="#" class="btn btn-secondary" role="button">Details</a>
-            <a href="#" class="btn btn-secondary" role="button">Gallery</a>
-            <a href="#" class="btn btn-primary" role="button">Bid</a>
+          
+          <a href="#" class="btn btn-secondary" role="button">Gallery</a>
+          <a href="#" class="btn btn-secondary" role="button">Details</a>
+          <a href="#" class="btn btn-primary" role="button">Bid</a>
         </div>
       </div>
     </div>
-    </div>
+  </div>
 
-  <main class="container">
-      <!--Image Gallery-->
-      <div class="row fe-vehicleGallery no-gutters">
-        <div class="col-8">
-          <div class="fe-vehicleGallery__mainImage">
-            <img src="img/demo-auction/1.jpg" alt="1996 Toyota Hilux Surf" width="100%">
+
+<!--Image Gallery-->
+<div class="row fe-vehicleGallery no-gutters">
+  <div class="col-8">
+    <div class="fe-vehicleGallery__mainImage">
+      <img src="img/demo-auction/1.jpg" alt="1996 Toyota Hilux Surf" width="100%">
+    </div>
+  </div>
+
+  <div class="col-4">
+    <!--Gallery Thumbnails-->
+    <div class="fe-vehicleGallery__thumbnails">
+      <ul>
+        <li><img src="img/demo-auction/1.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
+        <li><img src="img/demo-auction/2.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
+        <li><img src="img/demo-auction/3.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
+        <li><img src="img/demo-auction/4.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
+        <li><img src="img/demo-auction/5.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
+        <li><img src="img/demo-auction/6.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
+        <li><img src="img/demo-auction/7.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
+        <li><img src="img/demo-auction/8.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
+        <li><img src="img/demo-auction/9.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
+        <li><img src="img/demo-auction/10.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
+        <li><img src="img/demo-auction/11.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
+        <li><img src="img/demo-auction/12.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
+        <li><img src="img/demo-auction/13.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
+        <li><img src="img/demo-auction/14.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
+        <li><img src="img/demo-auction/15.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
+        <li><img src="img/demo-auction/16.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--End Image Gallery -->
+
+
+  <main class="fe-AuctionBody container">
+
+
+
+    <div class="row">
+      <div class="col-md-8 blog-main">
+
+        <div class="blog-post">
+          <h4 class="blog-post-title">Highlights</h4>
+          <p>THIS... is a 1996 Toyota Hilux Surf SSR-G Wide 4x4, finished in blue and silver with a gray interior.</p>
+          <ul>
+            <li>This is a right-hand-drive, Japanese-spec SUV that's registered in New Hampshire. Reportedly imported
+              from Japan earlier in 2022, it's equipped with a metric instrument cluster and its odometer displays about
+              145,700 kilometers, which represents approximately 90,600 miles.</li>
+            <li>Factory equipment includes 15-inch wheels, an adjustable suspension system, a fender-mounted mirror,
+              running boards, cloth upholstery, a power-operated rear undermirror, a power-operated hatch window, air
+              conditioning, a Clean-Ace air purifier system, and a cassette player. Modifications reported by the
+              selling dealer are limited to a pair of Bosch driving lights on the front bumper, a Sony head unit, and a
+              Sony CD changer.</li>
+            <li>Known as the Hilux Surf in Japan, the third-generation Toyota 4Runner launched in 1995 as the popularity
+              of SUVs ballooned on both sides of the Pacific. It shared its basic proportions with its predecessor but
+              it was new from the ground up and slightly longer. And, while it was nicer and better-suited to
+              family-hauling duties inside, it retained body-on-frame construction and remained exceptionally capable
+              off-road. Japanese buyers had access to several options not offered here, including a turbodiesel engine
+              (which this truck is equipped with). Production ended in 2002.</li>
+            <li>Power comes from a 3.0-liter turbodiesel 4-cylinder engine, rated at 130 horsepower and 213 lb-ft of
+              torque. It spins the four wheels via a 4-speed automatic transmission and a 2-speed transfer case.</li>
+          </ul>
+
+
+          <div class="detail-section detail-equipment">
+            <h4>Equipment</h4>
+            <div class="detail-body">
+              <ul>
+                <li>15-inch wheels</li>
+                <li>Adjustable suspension system</li>
+                <li>Bug deflector on the hood</li>
+                <li>Fender-mounted mirror</li>
+                <li>Rain guards on the windows</li>
+                <li>Running boards</li>
+                <li>Rear spoiler</li>
+                <li>Swing-out spare tire carrier</li>
+                <li>Wood-look interior trim</li>
+                <li>Cloth upholstery</li>
+                <li>Power-adjustable door mirrors</li>
+                <li>Power-operated rear undermirror</li>
+                <li>Pod with compass, thermometer, and barometer</li>
+                <li>Power-operated hatch window</li>
+                <li>Air conditioning</li>
+                <li>Clean-Ace air purifier system</li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.blog-post -->
+
+
+
+      </div><!-- /.blog-main -->
+
+      <aside class="col-md-4 blog-sidebar">
+        <div class="card fe-sellerInfo mb-3">
+          <div class="card-header">About The Seller</div>
+          <div class="card-body">
+            <h5 class="card-title">Go Motors, USA</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary btn-block">Seller Profile</a>
           </div>
         </div>
 
-        <div class="col-4">
-          <!--Gallery Thumbnails-->
-          <div class="fe-vehicleGallery__thumbnails">
-           <ul>
-              <li><img src="img/demo-auction/1.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
-              <li><img src="img/demo-auction/2.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
-              <li><img src="img/demo-auction/3.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
-              <li><img src="img/demo-auction/4.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
-              <li><img src="img/demo-auction/5.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
-              <li><img src="img/demo-auction/6.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
-              <li><img src="img/demo-auction/7.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
-              <li><img src="img/demo-auction/8.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
-              <li><img src="img/demo-auction/9.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
-              <li><img src="img/demo-auction/10.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
-              <li><img src="img/demo-auction/11.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
-              <li><img src="img/demo-auction/12.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
-              <li><img src="img/demo-auction/13.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
-              <li><img src="img/demo-auction/14.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
-              <li><img src="img/demo-auction/15.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
-              <li><img src="img/demo-auction/16.jpg" alt="1996 Toyota Hilux Surf" width="100%"></li>
-           </ul>
-        </div>
-      </div>
-      </div> <!--end row-->
+        <div class="p-3">
+          <h4>Auctions Ending Soon</h4>
 
-      <div class="row">
-        <div class="col-md-8 blog-main">
+          <div class="fe-auctionsEndingSoon row">
+            <div class="col-6">
+              <div class="fe-auctionsEndingSoon__item card">
+                <img src="img/ending-soon-1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">1991 Ford F-150</h5>
+                  <p class="card-text"><span class="badge badge-secondary">No Reserve</span> 6-Cylinder Power, Some
+                    Modifications, Cirrus Blue Metallic</p>
+                </div>
+              </div>
+            </div>
 
-          <div class="blog-post">
-            <h4 class="blog-post-title">Highlights</h4>
-            <p>THIS... is a 1996 Toyota Hilux Surf SSR-G Wide 4x4, finished in blue and silver with a gray interior.</p><ul><li>This is a right-hand-drive, Japanese-spec SUV that's registered in New Hampshire. Reportedly imported from Japan earlier in 2022, it's equipped with a metric instrument cluster and its odometer displays about 145,700 kilometers, which represents approximately 90,600 miles.</li><li>Factory equipment includes 15-inch wheels, an adjustable suspension system, a fender-mounted mirror,  running boards, cloth upholstery, a power-operated rear undermirror, a power-operated hatch window, air conditioning, a Clean-Ace air purifier system, and a cassette player. Modifications reported by the selling dealer are limited to a pair of Bosch driving lights on the front bumper, a Sony head unit, and a Sony CD changer.</li><li>Known as the Hilux Surf in Japan, the third-generation Toyota 4Runner launched in 1995 as the popularity of SUVs ballooned on both sides of the Pacific. It shared its basic proportions with its predecessor but it was new from the ground up and slightly longer. And, while it was nicer and better-suited to family-hauling duties inside, it retained body-on-frame construction and remained exceptionally capable off-road. Japanese buyers had access to several options not offered here, including a turbodiesel engine (which this truck is equipped with). Production ended in 2002.</li><li>Power comes from a 3.0-liter turbodiesel 4-cylinder engine, rated at 130 horsepower and 213 lb-ft of torque. It spins the four wheels via a 4-speed automatic transmission and a 2-speed transfer case.</li></ul>
+            <div class="col-6">
+              <div class="fe-auctionsEndingSoon__item card">
+                <img src="img/ending-soon-2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">1996 Mitsubishi Pajero</h5>
+                  <p class="card-text">6-Cylinder Power, Some Modifications, Cirrus Blue Metallic</p>
+                </div>
+              </div>
+            </div>
 
+            <div class="col-6">
+              <div class="fe-auctionsEndingSoon__item card">
+                <img src="img/ending-soon-3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">1997 Toyota 4Runner Long Title Testing</h5>
+                  <p class="card-text"><span class="badge badge-secondary">No Reserve</span> 6-Cylinder Power, Some
+                    Modifications, Cirrus Blue Metallic.</p>
+                </div>
+              </div>
+            </div>
 
-            <div class="detail-section detail-equipment"><h4>Equipment</h4><div class="detail-body"><ul><li>15-inch wheels</li><li>Adjustable suspension system</li><li>Bug deflector on the hood</li><li>Fender-mounted mirror</li><li>Rain guards on the windows</li><li>Running boards</li><li>Rear spoiler</li><li>Swing-out spare tire carrier</li><li>Wood-look interior trim</li><li>Cloth upholstery</li><li>Power-adjustable door mirrors</li><li>Power-operated rear undermirror</li><li>Pod with compass, thermometer, and barometer</li><li>Power-operated hatch window</li><li>Air conditioning</li><li>Clean-Ace air purifier system</li></ul></div></div>
-          </div><!-- /.blog-post -->
+            <div class="col-6">
+              <div class="fe-auctionsEndingSoon__item card">
+                <img src="img/ending-soon-4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">2002 Ford Excursion</h5>
+                  <p class="card-text">6-Cylinder Power, Some Modifications, Cirrus Blue Metallic</p>
+                </div>
+              </div>
+            </div>
 
+            <div class="col-6">
+              <div class="fe-auctionsEndingSoon__item card">
+                <img src="img/ending-soon-4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">2002 Ford Excursion</h5>
+                  <p class="card-text">6-Cylinder Power, Some Modifications, Cirrus Blue Metallic</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="fe-auctionsEndingSoon__item card">
+                <img src="img/ending-soon-4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">2002 Ford Excursion</h5>
+                  <p class="card-text">6-Cylinder Power, Some Modifications, Cirrus Blue Metallic</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
           
 
-        </div><!-- /.blog-main -->
+        </div>
 
-        <aside class="col-md-4 blog-sidebar">
-          <div class="p-3 mb-3 bg-light rounded">
-            <h4>About the Seller</h4>
-            <h6 class="font-italic"><a href="#">Auction123</a></h6>
-            <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            <a class="btn btn-primary btn-block my-2" href="#" target="_blank">View Seller Profile</a>
-          </div>
-
-          <div class="p-3">
-            <h4>Auctions Ending Soon</h4>
-            
-              <div class="fe-auctionsEndingSoon row">
-                <div class="col-6">
-                  <div class="fe-auctionsEndingSoon__item card">
-                    <img src="img/ending-soon-1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">1991 Ford F-150</h5>
-                      <p class="card-text"><span class="badge badge-secondary">No Reserve</span> 6-Cylinder Power, Some Modifications, Cirrus Blue Metallic</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-6">
-                  <div class="fe-auctionsEndingSoon__item card">
-                    <img src="img/ending-soon-2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">1996 Mitsubishi Pajero</h5>
-                      <p class="card-text">6-Cylinder Power, Some Modifications, Cirrus Blue Metallic</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-6">
-                  <div class="fe-auctionsEndingSoon__item card">
-                    <img src="img/ending-soon-3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">1997 Toyota 4Runner Long Title Testing</h5>
-                      <p class="card-text"><span class="badge badge-secondary">No Reserve</span> 6-Cylinder Power, Some Modifications, Cirrus Blue Metallic.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-6">
-                    <div class="fe-auctionsEndingSoon__item card">
-                      <img src="img/ending-soon-4.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">2002 Ford Excursion</h5>
-                        <p class="card-text">6-Cylinder Power, Some Modifications, Cirrus Blue Metallic</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-           
-
-          </div>
-
-          <div class="p-3">
-            <h4 class="font-italic">Elsewhere</h4>
-            <ol class="list-unstyled">
-              <li><a href="#">GitHub</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Facebook</a></li>
-            </ol>
-          </div>
-        </aside><!-- /.blog-sidebar -->
+        <div class="p-3">
+          <h4 class="font-italic">Elsewhere</h4>
+          <ol class="list-unstyled">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ol>
+        </div>
+      </aside><!-- /.blog-sidebar -->
 
   </main>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
-  </body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
