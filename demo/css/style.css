@@ -4,7 +4,12 @@
 
 html {
     font-family: 'Montserrat', sans-serif!important;
-    font-size:18px;
+    font-size:16px;
+}
+
+
+.detail-body {
+    border-bottom: 1px solid #eee;
 }
 
 .container {
