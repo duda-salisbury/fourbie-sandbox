@@ -253,7 +253,7 @@ li {
 
 .fe-vehicleGallery {
     margin:0 auto;
-
+    margin-top:20px;
 
 }
 
@@ -267,6 +267,18 @@ li {
     height: 68vh;
     overflow: hidden;
     width: 100%;
+}
+
+.fe-vehicleGallery__thumbnails li:first-child {
+    background-color:#040314;
+    display: flex;
+    align-items: stretch;
+    color:#fff;
+}
+
+.fe-vehicleGallery__thumbnails li:first-child button {
+    background-color:rgba(4, 3, 20, 0.82);
+    border-radius: 0px!important;
 }
 
 .fe-vehicleGallery__thumbnails li {
