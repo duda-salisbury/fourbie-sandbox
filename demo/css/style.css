@@ -50,10 +50,26 @@ li {
     font-family: 'Oswald', sans-serif;
 }
 
+.btn-secondary:hover {
+    /** slightly darken the background color **/
+    background-color: #6c757d !important;
+}
+
+
+
 .btn-primary, .badge-primary {
     background-color:#eb6432 !important;
     border-color:#eb6432 !important;
     color:#FFF;
+}
+
+.btn-primary:hover {
+    /** Slightly Darker Orange **/
+    background-color:#d95a2a !important;
+}
+
+.btn:hover {
+    color:#fff;
 }
 
 .btn-secondary {
@@ -65,6 +81,11 @@ li {
 .btn-accent {
     background-color: #4caf50;
     color: #fff;
+}
+
+.btn-accent:hover {
+    /** slightly darken the green color **/
+    background-color: #38863a !important;
 }
 
 .fourbie-brand-header {
@@ -90,6 +111,7 @@ li {
     top: -1px;
     z-index: 998;
     margin-bottom: 0px;
+    transition:0.5s;
 }
 
 .fe-auctionHero__head {
