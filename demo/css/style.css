@@ -235,7 +235,7 @@ li {
 
 
 .fe-auctionInfoBar__currentBid {
-    background-color: #4caf50;
+    background-color: rgb(65, 100, 56)!important;
     color: #fff;
     display: flex;
     flex-direction: column-reverse;
