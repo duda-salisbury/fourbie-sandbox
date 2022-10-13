@@ -50,7 +50,7 @@ li {
     font-family: 'Oswald', sans-serif;
 }
 
-.btn-primary {
+.btn-primary, .badge-primary {
     background-color:#eb6432 !important;
     border-color:#eb6432 !important;
     color:#FFF;
