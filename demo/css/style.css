@@ -344,22 +344,22 @@ li {
 
 }
 
-.fe-sellerInfo .card-header {
-    /* font-family: 'Oswald', sans-serif;
-    color: #fff;
-    padding: 10px 15px;
-    text-transform: uppercase;
-    border-bottom: none;
-    text-align: left;
-    font-weight: 600;
-
-    font-size: 1.25rem;
-    font-weight: 400;
-    margin: 0;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 0.75px; */
+.card.fe-sellerInfo .badge {
+    position: absolute;
+    top:15px;
 }
+
+.card.card.fe-sellerInfo .card-title {
+    padding-bottom:5px;
+    margin-bottom:5px;
+}
+
+.card.fe-sellerInfo .card-subtitle {
+    padding-top:5px;
+}
+
+/** End About The Seller Callout **/
+
 
 /** Auction Body Stuff **/
 
