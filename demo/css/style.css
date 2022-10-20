@@ -285,19 +285,20 @@ li {
 }
 
 .fe-vehicleGallery__thumbnails {
-    height: 600px;
+    height: 700px;
     overflow: hidden;
     width: 100%;
+    flex-grow: 1;
 }
 
-.fe-vehicleGallery__thumbnails li:first-child {
+.fe-vehicleGallery__thumbnails li:last-child {
     background-color:#040314;
     display: flex;
     align-items: stretch;
     color:#fff;
 }
 
-.fe-vehicleGallery__thumbnails li:first-child button {
+.fe-vehicleGallery__thumbnails li:last-child button {
     background-color:rgba(4, 3, 20, 0.82);
     border-radius: 0px!important;
 }
@@ -306,7 +307,7 @@ li {
     list-style: none;
     width: 20%;
     padding: 1px;
-    height: calc(600px / 4);
+    height: calc(700px / 4);
 }
 
 .fe-vehicleGallery__thumbnails li img {
@@ -449,4 +450,16 @@ footer a {
     background-color:#eee;
     color:#040314;
     text-indent: 15px;
+}
+
+.fe-bidsAndComments__commentsList__comment {
+    border-bottom:1px solid #eee;
+    padding:25px;
+    margin:10px 0px;
+    transition:0.4s;
+}
+
+.fe-bidsAndComments__commentsList__comment:hover {
+    background-color:#eee;
+
 }
