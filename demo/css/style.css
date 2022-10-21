@@ -275,17 +275,17 @@ li {
 .fe-vehicleGallery {
     margin:0 auto;
     margin-top:20px;
-
+    margin-bottom:20px;
 }
 
 .fe-vehicleGallery__mainImage img {
     width: 100%;
-    height: 95vh;
+    height:600px;
     object-fit: cover;
 }
 
 .fe-vehicleGallery__thumbnails {
-    height: 700px;
+    height: 600px;
     overflow: hidden;
     width: 100%;
     flex-grow: 1;
@@ -305,9 +305,9 @@ li {
 
 .fe-vehicleGallery__thumbnails li {
     list-style: none;
-    width: 20%;
+    width: 50%;
     padding: 1px;
-    height: calc(700px / 4);
+    height: calc(600px / 4);
 }
 
 .fe-vehicleGallery__thumbnails li img {
