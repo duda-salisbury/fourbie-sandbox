@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h5, h6 {
 }
 
 p, li, span {
-    font-family: 'Montserrat', sans-serif!important;
+    font-family: 'Quattrocento', sans-serif!important;
 }
 
 ul {
@@ -149,6 +149,8 @@ li {
 
 .fe-auctionHero h1 {
     color: #fff;
+    background: #040314;
+    padding:5px;
     font-size: 2rem;
     font-weight: 800;
     text-align: left;
@@ -157,7 +159,7 @@ li {
 
 .fe-auctionHero h2 {
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
     font-family: 'Montserrat', sans-serif!important;
     text-transform: none;
@@ -246,7 +248,7 @@ li {
 
 
 .fe-auctionInfoBar__currentBid {
-    background-color: rgb(65, 100, 56)!important;
+    background-color:#332C13;
     color: #fff;
     display: flex;
     flex-direction: column-reverse;
@@ -272,7 +274,7 @@ li {
     flex-direction: column-reverse;
     flex-grow:1!important;
     padding: 10px 5px;
-    background-color: rgba(4, 3, 20, 0.82);
+    background-color:#040314;
     color: #fff;
 }
 
