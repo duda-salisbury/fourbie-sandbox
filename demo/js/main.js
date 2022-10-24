@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', function() {
             { threshold: [1], rootMargin: `-${offset}px 0px 0px 0px` }
         );
         
-        observer.observe(DOMElement);
+       // observer.observe(DOMElement);
 
     });
 

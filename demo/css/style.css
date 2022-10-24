@@ -106,21 +106,23 @@ li {
 
 .fe-auctionHero {
     background-color: #fff;
-    background-size: cover;
+    background-size: fill;
     background-position: center;
     background-repeat: no-repeat;
     padding-bottom: 15px;
-    padding-top: 55px;
-    position: sticky;
-    height: 200px;
-    top: -1px;
+    padding-top: 85px;
+    
+    top:0px;
+    height: 55vh;
+    background-image: url(../img/demo-auction/2/140.jpg);
     z-index: 998;
-    margin-bottom: 0px;
-    transition:0.5s;
+    margin-bottom: 25px;
 }
 
 .fe-auctionHero__head {
-   padding-top:20px; 
+   padding-top:20px;
+   /** Material Design Text Shadow **/
+    text-shadow: 0 1px 3px rgba(0,0,0,.5), 0 1px 2px rgba(0,0,0,.5); 
 }
 
 .fe-auctionHero.is-pinned .fe-auctionHero__head {
@@ -134,10 +136,11 @@ li {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 1px 5px 0 rgba(0, 0, 0, 0.12),
     0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    background-image:unset;
 }
 
 .fe-auctionHero h1 {
-    color: #040314;
+    color: #fff;
     font-size: 2rem;
     font-weight: 800;
     text-align: left;
@@ -145,7 +148,7 @@ li {
 }
 
 .fe-auctionHero h2 {
-    color: #040314;
+    color: #fff;
     font-size: 18px;
     text-align: left;
     font-family: 'Montserrat', sans-serif!important;
@@ -178,7 +181,7 @@ li {
     align-items: center;
     display: flex;
     justify-content: space-around;
-    
+    /* position: sticky; */
     align-items: flex-end;
     flex-direction: column;
     position: relative;
