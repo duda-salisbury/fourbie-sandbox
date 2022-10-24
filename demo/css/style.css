@@ -122,6 +122,11 @@ li {
     align-content: space-around;
 }
 
+.fe-auctionHero__content {
+    position: sticky;
+    top:10px;
+}
+
 .fe-auctionHero__head {
    padding-top:20px;
    /** Material Design Text Shadow **/
@@ -448,7 +453,7 @@ footer a {
     background-color:#6c757d;
     color:#eee;
     text-indent: 15px;
-    font-size:18px;
+    font-size:14px;
 }
 
 .fe-vehicleSpecs__item>h5 {
@@ -456,6 +461,7 @@ footer a {
     background-color:#eee;
     color:#040314;
     text-indent: 15px;
+    font-size:12px;
 }
 
 .fe-bidsAndComments__commentsList__comment {
