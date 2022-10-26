@@ -38,12 +38,15 @@ li {
 }
 
 .badge {
-    font-weight:200!important;
+    font-weight:100!important;
+    font-family: 'Oswald', sans-serif!important;
+    text-transform: uppercase!important;
+    font-size: .875rem!important;
 }
 
 /** round the bootstrap buttons **/
 .btn {
-    border-radius: 30px !important;
+  
     padding:8px 24px !important;
     text-transform: uppercase;
     font-weight: 400!important;
@@ -118,8 +121,9 @@ li {
     z-index: 998;
     margin-bottom: 25px;
     display: flex;
-    align-items:flex-end;
+    align-items:center;
     align-content: space-around;
+    padding-left:15px;
 }
 
 .fe-auctionHero  .badge {
@@ -136,7 +140,7 @@ li {
 
 .fe-auctionHero__head {
    padding-top:20px;
-
+    
    background-color:rgb(0 0 0 / 40%);
 
 }
