@@ -17,10 +17,28 @@ window.addEventListener('DOMContentLoaded', function() {
             { threshold: [1], rootMargin: `-${offset}px 0px 0px 0px` }
         );
         
-       // observer.observe(DOMElement);
+        //observer.observe(DOMElement);
 
     });
 
+
+    const content = document.querySelector('.fe-auctionHero__content');
+    const initialOffsetTop = content.offsetTop;
+    document.addEventListener("scroll", (e) => {
+        var scrolled = document.scrollingElement.scrollTop;
+        var position = content.offsetTop;
+        console.log(`scrolled: ${scrolled} position: ${position} initialOffsetTop: ${initialOffsetTop}`);
+        if(scrolled > initialOffsetTop-20){
+            content.classList.add(
+                'fe-auctionHero__content--pinned'
+            );
+        } else if (scrolled <= initialOffsetTop) {
+            console.log("yes please");
+            content.classList.remove(
+                'fe-auctionHero__content--pinned'
+            );
+        }
+    });
 
 
 });
