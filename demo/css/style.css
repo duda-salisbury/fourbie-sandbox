@@ -116,7 +116,7 @@ li {
     padding-top: 85px;
     width: 100%;
     top:0px;
-    height: 85vh;
+    height: 80vh;
     background-image: url(../img/demo-auction/2/140.jpg);
     z-index: 998;
     margin-bottom: 25px;
@@ -149,15 +149,16 @@ li {
 
 .fe-auctionHero__head {
    padding-top:20px;
-
    position: relative;
    top:0px;
    transition: 0.5s;
    background-color:rgb(0 0 0 / 40%);
+   opacity: 1;
 }
 
 .fe-auctionHero__content--pinned .fe-auctionHero__head {
     background-color:rgb(0 0 0 / 100%);
+    opacity: 0;
 }
 
 .fe-auctionHero.is-pinned .fe-auctionHero__head {
@@ -202,10 +203,18 @@ li {
 }
 
 
+
+
 .fe-auctionHero__nav {
-    position: relative;
-    top:-10px;
     z-index: 999;
+    position: sticky;
+    top:0px;
+    background-color: #fff;
+    padding-top:20px;
+    padding-bottom:20px;
+
+    /** add a shadow **/
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
 }
 
 .fe-auctionHero__nav a:first-child {

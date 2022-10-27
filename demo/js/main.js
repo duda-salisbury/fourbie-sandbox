@@ -41,4 +41,24 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 
 
+    
+    // const auctionNav = document.querySelector('.fe-auctionHero__nav');
+    // const auctionNavInitialOffsetTop = auctionNav.offsetTop;
+    // document.addEventListener("scroll", (e) => {
+    //     var scrolled = document.scrollingElement.scrollTop;
+    //     var position = auctionNav.offsetTop;
+    //     console.log(`scrolled: ${scrolled} position: ${position} navoffset: ${auctionNavInitialOffsetTop}`);
+    //     if(scrolled > auctionNavInitialOffsetTop-20){
+    //         auctionNav.classList.add(
+    //             'fe-auctionHero__nav--pinned'
+    //         );
+    //     } else if (scrolled <= auctionNavInitialOffsetTop) {
+    //         console.log("yes please");
+    //         auctionNav.classList.remove(
+    //             'fe-auctionHero__nav--pinned'
+    //         );
+    //     }
+    // });
+
+
 });
