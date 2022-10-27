@@ -235,7 +235,7 @@ li {
     align-items: center;
     display: flex;
     justify-content: space-around;
-
+    margin-right:7px;
     align-items: flex-end;
     flex-direction: column;
     position: relative;
@@ -347,7 +347,6 @@ li {
 }
 
 .fe-vehicleGallery__thumbnails {
-    height: 600px;
     overflow: hidden;
     width: 100%;
     flex-grow: 1;
@@ -367,9 +366,9 @@ li {
 
 .fe-vehicleGallery__thumbnails li {
     list-style: none;
-    width: 50%;
+    width: 33.333%;
     padding: 1px;
-    height: calc(600px / 4);
+   
 }
 
 .fe-vehicleGallery__thumbnails li img {
@@ -508,10 +507,13 @@ footer a {
 
 .fe-vehicleSpecs__item>h3 {
     width: 30%;
-    background-color:#6c757d;
+    background-color:#040314;
     color:#eee;
     text-indent: 15px;
     font-size:14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+white-space: nowrap;
 }
 
 .fe-vehicleSpecs__item>h5 {
@@ -519,7 +521,7 @@ footer a {
     background-color:#eee;
     color:#040314;
     text-indent: 15px;
-    font-size:12px;
+    font-size:14px;
 }
 
 .fe-bidsAndComments__commentsList__comment {
