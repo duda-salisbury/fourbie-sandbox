@@ -257,13 +257,21 @@ li {
     flex-grow: 1;
     justify-content: center;
     text-align: center;
-    background-color:rgb(0 0 0 / 40%);
+
     pointer-events: all;
     width:250px;
 }
 
-.fe-auctionHero__content--pinned .fe-auctionInfoBar>div {
+.fe-auctionInfoBar__currentBid:hover, .fe-auctionInfoBar__numberOfBids:hover, .fe-auctionInfoBar__countdown:hover {
+    background-color:rgb(255 255 255 / 80%)!important;
+    color: #000 !important;
+}
+
+
+
+.fe-auctionHero__content--pinned .fe-auctionInfoBar__currentBid, .fe-auctionHero__content--pinned .fe-auctionInfoBar__numberOfBids, .fe-auctionHero__content--pinned .fe-auctionInfoBar__countdown {
     background-color:rgb(0 0 0 / 100%);
+    transition: 0.5s;
 }
 
 .fe-auctionInfoBar__countdown span {
@@ -285,7 +293,7 @@ li {
     flex-grow: 0!important;
     justify-content: space-between!important;
     width:100%;
-
+    background-color:rgb(0 0 0 / 40%);
     color: #fff;
     display: flex;
     flex-direction: column-reverse;
@@ -306,7 +314,7 @@ li {
     padding: 10px 5px;
     flex-grow:1!important;
     border-right:1px solid #eee;
-    
+    background-color:rgb(0 0 0 / 40%);
     
     
 }
@@ -329,6 +337,7 @@ li {
     flex-grow:1!important;
     padding: 10px 5px;
     color: #fff;
+    background-color:rgb(0 0 0 / 40%);
 }
 
 
