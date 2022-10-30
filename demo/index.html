@@ -279,47 +279,54 @@
       </div>
     </div>
   </div>
-  <div style="background-color:#eee; padding-top:25px;">
+  <div class="fe-auctionInDepth">
     <div class="container">
       <div class="row">
         <div class="container">
-          <h4>Utility & Experience</h4>
+          <div class="col-md-6">
+            <h4>Utility & Experience</h4>
+            <p style="font-size:22px">Maecenas sed enim pretium, pharetra dolor ac, sodales turpis. Nulla vehicula in mauris quis posuere. Phasellus quis aliquet ex, id fringilla lorem.</p>
+          </div>
+
         </div>
       </div>
       <div class="row align-items-center" style="padding-top:25px; padding-bottom: 25px;">
 
         <div class="col-md-12">
           <nav>
-            <div class="nav nav-tabs text-center" id="nav-tab" role="tablist">
-              <button class="btn btn-secondary btn-sm" id="nav-home-tab" data-toggle="tab" data-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Powertrain</button>
-              <button class="btn btn-secondary btn-sm" id="nav-profile-tab" data-toggle="tab" data-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Capability</button>
-              <button class="btn btn-secondary btn-sm" id="nav-contact-tab" data-toggle="tab" data-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Upgrades & Modifications</button>
+            <div class="nav nav-tabs text-center" id="nav-tab" role="tablist" style="display:flex; border:none; justify-content: space-around;  background-color: #fff;">
+              <button class="btn btn-link btn-sm active show" id="nav-powertrain-tab" data-toggle="tab" data-target="#nav-powertrain" type="button" role="tab" aria-controls="nav-powertrain" aria-selected="true">Powertrain</button>
+              <button class="btn btn-link btn-sm" id="nav-capability-tab" data-toggle="tab" data-target="#nav-capability" type="button" role="tab" aria-controls="nav-capability" aria-selected="false">Capability</button>
+              <button class="btn btn-link btn-sm" id="nav-upgrades-tab" data-toggle="tab" data-target="#nav-upgrades" type="button" role="tab" aria-controls="nav-upgrades" aria-selected="false">Upgrades & Modifications</button>
+              <button class="btn btn-link btn-sm" id="nav-service-history-tab" data-toggle="tab" data-target="#nav-service-history" type="button" role="tab" aria-controls="nav-service-history" aria-selected="false">Service History</button>
+              <button class="btn btn-link btn-sm" id="nav-flaws-tab" data-toggle="tab" data-target="#nav-flaws" type="button" role="tab" aria-controls="nav-flaws" aria-selected="false">Known Flaws</button>
+           
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent" style="padding:25px 0px;">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="tab-pane fade show active" id="nav-powertrain" role="tabpanel" aria-labelledby="nav-powertrain-tab">
               <div class="container">
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="img/demo-auction/2/98.jpg" alt="1996 Toyota Hilux Surf" width="100%">
-                  </div>
-                  <div class="col-md-6">
+                <div class="row align-items-center">
+                  <div class="col-md-4 text-center">
                     <ul>
                       <li>292 hp. Aluminum-Block 5.0L V8 Engine</li>
                       <li>5-Speed Automatic Transmission</li>
                       <li>2-Speed Transfer Case   </li>                
                     </ul>
                   </div>
+
+                  <div class="col-md-8">
+                    <img src="img/demo-auction/2/98.jpg" alt="1996 Toyota Hilux Surf" width="100%">
+                  </div>
+
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div class="tab-pane fade" id="nav-capability" role="tabpanel" aria-labelledby="nav-capability-tab">
               <div class="container">
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="img/demo-auction/2/26.jpg" alt="1996 Toyota Hilux Surf" width="100%">
-                  </div>
-                  <div class="col-md-6">
+                <div class="row align-items-center">
+
+                  <div class="col-md-4 text-center">
                     <ul>
                       <li>4-Wheel Drive</li>
                       <li>3 Locking Differentials</li>
@@ -327,26 +334,72 @@
                       
                     </ul>
                   </div>
+
+                  <div class="col-md-8">
+                    <img src="img/demo-auction/2/26.jpg" alt="1996 Toyota Hilux Surf" width="100%">
+                  </div>
+
                 </div>
               </div>              
             </div>
-            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <div class="tab-pane fade" id="nav-upgrades" role="tabpanel" aria-labelledby="nav-upgrades-tab">
               <div class="container">
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="img/demo-auction/2/183.jpg" alt="1996 Toyota Hilux Surf" width="100%">
-                  </div>
-                  <div class="col-md-6">
+                <div class="row align-items-center">
+                  <div class="col-md-4 text-center">
                     <ul>
                       <li>20 in. Wheels </li>
                       <li>Brabus Exhaust Muffler </li>
                       <li>Bluetooth-Capable Alpine CD Stereo </li>
         
                     </ul>
+                  </div>                 
+                  <div class="col-md-8">
+                    <img src="img/demo-auction/2/183.jpg" alt="1996 Toyota Hilux Surf" width="100%">
                   </div>
                 </div>
               </div>               
             </div>
+
+            <div class="tab-pane fade" id="nav-service-history" role="tabpanel" aria-labelledby="nav-service-history-tab">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-md-4 text-center">
+                    <ul>
+                      <li>July 2022: California Emissions Passed</li> 
+                      <li>June 2022: 4-Wheel Alignment, Oil Change, 30-Point Inspection Pass</li>
+                      <li>February 2022: Alternator Replaced, Brakes Checked, Starter Solenoid Replaced</li>
+                      <li style="background-color:transparent;"><img style="max-width: 100%;" src="img/CarfaxLogo3.svg"></li>
+                      
+        
+                    </ul>
+                  </div>
+
+                  <div class="col-md-8">
+                    <img src="img/demo-auction/2/164.jpg" alt="1996 Toyota Hilux Surf" width="100%">
+                  </div>                  
+                </div>
+              </div>               
+            </div>
+
+
+            <div class="tab-pane fade" id="nav-flaws" role="tabpanel" aria-labelledby="nav-flaws-tab">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-md-4 text-center">
+                    <ul>
+                      <li>Curb rash on driver’s side rear wheel</li>
+                      <li>2017 date code on tires</li>
+                      <li>Crease on passenger side outer bolster</li> 
+                    </ul>
+                  </div>
+
+                  <div class="col-md-8">
+                    <img src="img/demo-auction/2/97.jpg" alt="1996 Toyota Hilux Surf" width="100%">
+                  </div>                  
+                </div>
+              </div>               
+            </div>
+
           </div>
         </div>
 
@@ -434,7 +487,7 @@
     <div class="col-md-4">
       <aside class="blog-sidebar">
         <div class="p-1">
-          <h5>Auctions Ending Soon</h5>
+          <h5>Other Auctions Ending Soon</h5>
     
           <div class="fe-auctionsEndingSoon row no-gutters">
             <div class="col-6">

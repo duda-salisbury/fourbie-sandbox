@@ -505,6 +505,36 @@ footer a {
         width:50%;
     }
 }
+
+.fe-auctionInDepth {
+    background-color:#eee; padding-top:25px;
+}
+
+.fe-auctionInDepth li {
+    display: inline-block;
+    font-size: 16px;
+    list-style: none;
+    background-color:#040314;
+    color:#fff;
+    margin:10px 0px;
+    padding:10px;
+}
+
+.fe-auctionInDepth button.btn-link {
+    color:#040314;
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    background-color: transparent;
+}
+
+.fe-auctionInDepth button.btn-link.active {
+    color:#fff;
+    background-color:#040314;
+}
     
 
 .fe-vehicleSpecs__item>h3 {
@@ -537,3 +567,4 @@ white-space: nowrap;
     background-color:#eee;
 
 }
+
