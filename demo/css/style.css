@@ -540,6 +540,11 @@ footer a {
     background-color: transparent;
 }
 
+.fe-auctionInDepth button.btn-link:hover {
+    color:#040314;
+    text-decoration: underline;
+}
+
 .fe-auctionInDepth button.btn-link.active {
     color:#fff;
     background-color:#040314;
