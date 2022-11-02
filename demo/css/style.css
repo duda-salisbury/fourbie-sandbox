@@ -282,8 +282,8 @@ li {
 }
 
 .fe-auctionInfoBar__currentBid:hover, .fe-auctionInfoBar__numberOfBids:hover, .fe-auctionInfoBar__countdown:hover {
-    background-color:rgb(255 255 255 / 80%)!important;
-    color: #000 !important;
+    /* background-color:rgb(255 255 255 / 80%)!important;
+    color: #000 !important; */
 }
 
 
