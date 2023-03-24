@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vehicle Demo</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css"
+    rel="stylesheet"
+    />
+  <link
+    href="https://cdn.jsdelivr.net/npm/vuetify@3.0.5/dist/vuetify.min.css"
+    rel="stylesheet"
+    />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@3.0.5/dist/vuetify.min.js"></script>
+    <style scoped>
+        .v-card .v-card-title {
+            font-size: 1rem !important;
+            line-height: 1.5rem !important;
+            white-space: break-spaces;
+            font-weight: bold;
+            height: 3rem;
+        }
+
+        .vehicle-price {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 0.5rem;
+            background-color:rgba(0,0,0,0.8);
+        }
+    </style>
+</head>
+  <body>
+    <div id="app">
+        <v-container>
+            <v-row>
+              <v-col cols="3">
+                  <v-select
+                    :items="vehicleMakes"
+                    label="Vehicle Make"
+                    v-model="queryOptions.vehicle_make"
+                    dense
+                  ></v-select>
+              </v-col>
+              <v-col cols="9">
+                    <v-row>
+                        <v-col cols="12">
+                        </v-col>
+                    </v-row>
+                  <v-row>
+                    <v-col class="productLoop__column" height="100%" v-for="vehicle in vehicles" :key="vehicle.id" cols="4">
+                        <v-card class="productLoop__item" height="100%">
+                            <v-img v-if="vehicle.tile_thumbnail"
+                            :src="vehicle.tile_thumbnail.guid"
+                            :alt="vehicle.tile_thumbnail.alt_text"
+                            width="100%"
+                            aspect-ratio="16/9"
+                            height="250"
+                            cover
+                            eager
+                            >
+
+                        </v-img>
+    
+                            <v-card-item>
+                                  <v-chip
+                                  class="vehicle-price"
+                                  color="#fff"
+                                  dark
+                                  label
+                                  >
+                                  ${{ commaNum(vehicle.price)}}
+                                  </v-chip>  
+                                <v-card-title>{{ vehicle.title.rendered }}</v-card-title>                          
+            
+                                {{ commaNum(vehicle.odometer) }}<br>
+                                {{vehicle.location_display}}
+                                <span class="excerpt" v-html="vehicle.excerpt.rendered"></span>
+                                
+                            </v-card-item>
+                            
+                            <v-card-actions>
+                            <v-btn 
+                            color="primary"
+                            text>Learn More</v-btn>
+                            </v-card-actions>
+                        </v-card>
+                    </v-col>
+                    </v-row>
+                  <v-row>
+                      <v-col cols="12">
+                          <v-pagination
+                              v-model= "queryOptions.page"
+                              :length="totalPages"
+                          circle
+                          color="primary"
+                      />
+                  </v-col>
+              </v-row>
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-app>
+    </div>
+
+    <script type="text/x-template" id="app-template">
+      <v-app>
+        <!-- Loop Through Vehicles In Cards -->
+        
+
+      
+    </script>
+    <script>
+      const { createApp } = Vue;
+      const { createVuetify } = Vuetify;
+      
+      const vuetify = createVuetify();
+      
+      const app = createApp({
+        data() {
+          return {
+            endpoint:"https://dev-fourbie-exchange.pantheonsite.io/wp-json/wp/v2/vehicle_listing?",
+            vehicleMakesEndpoint:"https://dev-fourbie-exchange.pantheonsite.io/wp-json/wp/v2/vehicle-makes-full?",
+            vehicles: [],
+            loading: true,
+            error: null,
+            totalPages:0,
+            vehicleMakes: [{id: 'default', value: 'default', title: "All Makes"}],
+            queryOptions:{
+                per_page:10,
+                page:1,
+                vehicle_make:null
+            }
+          };
+        },
+        methods: {
+          async getVehicles() {
+            try {
+                console.log("Getting Vehicles");
+                this.endpoint = "https://dev-fourbie-exchange.pantheonsite.io/wp-json/wp/v2/vehicle_listing?";
+                /** Loop through query options and append to endpoint if value is not null, replacing _ with - in the names **/
+                for (const [key, value] of Object.entries(this.queryOptions)) {
+                    if(value != null && value != "default"){
+                        this.endpoint += key.replace("_","-")+"="+value+"&";
+                    }
+                }
+
+                const response = await fetch(this.endpoint);
+              
+              this.vehicles = await response.json();
+              this.totalPages = response.headers.get('X-WP-TotalPages');
+              /** Log Total Numnber of Vehicles */
+                console.log("Total Vehicles: "+response.headers.get('X-WP-Total'));
+            } catch (error) {
+              this.error = error.toString();
+            } finally {
+              this.loading = false;
+            }
+          },
+
+          async getVehicleMakes() {
+              try {
+                  console.log("Getting Vehicle Makes");
+                  const response = await fetch(this.vehicleMakesEndpoint);
+                  var ret = await response.json();
+                  
+
+                  for (var i = 0; i < ret.length; i++) {
+                      this.vehicleMakes.push({
+                          id: ret[i].term_id,
+                          value: ret[i].term_id,
+                          title: ret[i].name
+                      });
+                  }
+              
+              } catch (error) {
+              this.error = error.toString();
+              } finally {
+              this.loading = false;
+              }
+          },
+
+          commaNum(value) {
+            if (!value) return ''
+            value = value.toString()
+            return value.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+          }
+        },
+
+        mounted() {
+          this.getVehicles();
+          this.getVehicleMakes();
+        },
+
+        watch: {
+            queryOptions: {
+                handler: function (newVal, oldVal) {
+                    this.getVehicles();
+                },
+                deep: true
+            }
+        }
+      })
+        .use(vuetify)
+        
+        .mount("#app");
+    </script>
+
+
+  </body>
+</html>
